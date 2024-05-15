@@ -10707,3 +10707,9 @@ export const addressList = [{
 		}]
 	}]
 }]
+if (typeof getApp === 'function') {
+  const app = getApp();
+  if (app) {
+    app.globalData.addressList = addressList;
+  }
+}
